@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vulnerable Server</title>
+</head>
+<body>
+    <h1>I am a vulnerable Webpage</h1>
+    <h2 Plz dont XSS Attack me></h2>
+    <p>
+        <input id="innocent_input">
+        <button onclick=crazyFunction()>Plz not!</button>
+        <div id="vulnerable_div"></div>
+    </p>
+    <script>
+        function crazyFunction() {
+            var i = document.getElementById("innocent_input");
+            var d = document.getElementById("vulnerable_div");
+            d.innerHTML = i.value;
+        }
+    </script>
+</body>
+</html>
