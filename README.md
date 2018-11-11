@@ -1,4 +1,4 @@
-### Small vulnerable web app
+# Small vulnerable web app
 
 Easy XSS-Attacks by using the input field and confirming it with Button click.
 
